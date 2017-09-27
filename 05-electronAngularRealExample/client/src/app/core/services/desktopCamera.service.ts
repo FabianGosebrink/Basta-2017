@@ -32,8 +32,8 @@ export class DesktopCameraService implements AbstractCameraService {
 
                     const takePhotoInternal = () => {
                         const canvasElement = doc.createElement('canvas');
-                        canvasElement.setAttribute('width', videoElement.videoWidth.toString());
-                        canvasElement.setAttribute('height', videoElement.videoHeight.toString());
+                        canvasElement.setAttribute('width', '640');
+                        canvasElement.setAttribute('height', '480');
 
                         setTimeout(() => {
                             const context = canvasElement.getContext('2d');
