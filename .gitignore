@@ -1,1 +1,7 @@
 02-electronAngular/.dist
+05-electronAngularRealExample/client/.dist/
+05-electronAngularRealExample/client/src/app/**/*.js
+05-electronAngularRealExample/client/src/app/**/*.js.map
+05-electronAngularRealExample/server/.vs/
+05-electronAngularRealExample/server/bin/
+05-electronAngularRealExample/server/obj/
