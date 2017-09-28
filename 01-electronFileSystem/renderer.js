@@ -1,4 +1,4 @@
-console.log("from renderer...");
+//console.log("from renderer...");
 
 const fs = require('fs');
 const os = require('os');

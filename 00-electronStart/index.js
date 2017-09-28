@@ -28,7 +28,3 @@ app.on('ready', () => {
     mainWindow.webContents.toggleDevTools();
   });
 });
-
-app.on('window-all-closed', () => {
-  app.quit()
-})

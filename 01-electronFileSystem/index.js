@@ -1,7 +1,4 @@
-const { app, BrowserWindow, globalShortcut, Menu } = require('electron');
-
-const path = require('path');
-const url = require('url');
+const { app, BrowserWindow, globalShortcut } = require('electron');
 
 let mainWindow = null;
 
@@ -18,8 +15,7 @@ app.on('ready', () => {
     height: 768,
   });
 
-  // console.log("from main process --> " + __dirname);
-  console.log(`from main process --> ${__dirname}`);
+  //console.log(`from main process --> ${__dirname}`);
 
   mainWindow.loadURL('file://' + __dirname + '/index.html');
 
@@ -31,7 +27,3 @@ app.on('ready', () => {
     mainWindow.webContents.toggleDevTools();
   });
 });
-
-app.on('window-all-closed', () => {
-  app.quit()
-})
